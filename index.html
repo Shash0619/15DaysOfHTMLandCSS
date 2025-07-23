@@ -3,150 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Day 3: Tables & Forms</title>
+  <title>Day 4 - CSS Basics</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
       color: #333;
+      line-height: 1.6;
+      padding: 2rem;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 2rem;
+    h1, h2 {
+      color: #007acc;
     }
 
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: left;
+    .highlight {
+      background-color: #e0f7fa;
+      padding: 0.5rem;
+      border-left: 4px solid #00acc1;
+      margin: 1rem 0;
     }
 
-    thead {
-      background-color: #e0e0e0;
+    .color-example {
+      color: #ff5733;
     }
 
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .form-group {
-      margin-bottom: 1rem;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 6px;
+    .text-styling {
       font-weight: bold;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #005fa3;
+      text-align: center;
+      text-decoration: underline;
+      letter-spacing: 2px;
+      line-height: 1.8;
     }
   </style>
 </head>
 <body>
+  <h1>Day 4: Introduction to CSS</h1>
 
-  <h1>📊 Sample HTML Table</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Role</th>
-        <th colspan="2">Contact</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Shashwat Tripathi</td>
-        <td>Frontend Developer</td>
-        <td>Email</td>
-        <td>shashwat@example.com</td>
-      </tr>
-      <tr>
-        <td rowspan="2">Aman Verma</td>
-        <td>UI/UX Designer</td>
-        <td>Email</td>
-        <td>aman@example.com</td>
-      </tr>
-      <tr>
-        <td>Phone</td>
-        <td colspan="2">+91 98765 43210</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>CSS (Cascading Style Sheets) helps style and design HTML elements. It separates structure from design, allowing a clean and scalable codebase.</p>
 
-  <h1>📝 User Feedback Form</h1>
-  <form action="#" method="POST">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="username" placeholder="Enter your name" required />
-    </div>
+  <h2>Basic Syntax</h2>
+  <div class="highlight">
+    <code>selector { property: value; }</code>
+  </div>
 
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="useremail" placeholder="Enter your email" required />
-    </div>
+  <h2>Color Example</h2>
+  <p class="color-example">This text is styled with a HEX color (#ff5733).</p>
 
-    <div class="form-group">
-      <label>Gender:</label>
-      <input type="radio" id="male" name="gender" value="male" />
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female" />
-      <label for="female">Female</label>
-    </div>
+  <h2>Text Styling</h2>
+  <p class="text-styling">Centered, bold, underlined text with custom spacing!</p>
 
-    <div class="form-group">
-      <label for="feedback">Feedback:</label>
-      <textarea id="feedback" name="userfeedback" rows="4" placeholder="Your feedback here..."></textarea>
-    </div>
+  <h2>CSS Units</h2>
+  <ul>
+    <li>Absolute units: px, cm</li>
+    <li>Relative units: %, em, rem</li>
+  </ul>
 
-    <div class="form-group">
-      <label for="rating">Rate Us:</label>
-      <input type="range" id="rating" name="userrating" min="1" max="10" />
-    </div>
-
-    <div class="form-group">
-      <label for="platform">Where did you find us?</label>
-      <select id="platform" name="platform">
-        <option value="">--Choose an option--</option>
-        <option value="linkedin">LinkedIn</option>
-        <option value="instagram">Instagram</option>
-        <option value="friend">Friend</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>
-        <input type="checkbox" name="subscribe" />
-        Subscribe to newsletter
-      </label>
-    </div>
-
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-  </form>
-
+  <h2>Font Family</h2>
+  <p style="font-family: 'Courier New', Courier, monospace;">This text uses a monospace font.</p>
 </body>
 </html>
