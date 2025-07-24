@@ -1,40 +1,43 @@
-#  Day 4: Introduction to CSS – #15DaysOfHTMLandCSS
+/* Universal Selector */
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-Welcome to **Day 4** of my **#15DaysOfHTMLandCSS Challenge**!  
-Today I explored the basics of **CSS** — the styling layer of the web that makes HTML come to life! 🎨✨
+/* Element Selector */
+h1 {
+  color: navy;
+}
 
-## 📘 What’s Inside
+/* ID Selector */
+#main-heading {
+  font-size: 2rem;
+}
 
-This mini project contains:
+/* Class Selector */
+.highlight {
+  background-color: yellow;
+  padding: 10px;
+}
 
--  A basic HTML page styled using internal CSS
--  Demonstrations of:
-  - CSS syntax (selectors + declarations)
-  - Text styling (alignment, weight, spacing)
-  - Color styling using HEX and named values
-  - CSS units: px, %, em, rem
-  - Fonts and typography
+/* Descendant Selector */
+div p {
+  font-style: italic;
+}
 
-##  Key Learnings
+/* Child Combinator */
+ul > li {
+  list-style-type: square;
+  margin-left: 20px;
+}
 
-- CSS helps control the layout, look, and feel of HTML documents.
-- Styling can be applied via Inline, Internal, or External methods.
-- Color, spacing, and typography greatly impact **readability** and **user experience**.
-- CSS is not just visual — it's functional design!
+/* Adjacent Sibling */
+h2 + p {
+  color: gray;
+}
 
-##  What's Next?
-
-Next up in the challenge:  
-**Day 5: CSS Selectors & Combinators** — unlocking the true power of CSS targeting. Stay tuned!
-
----
-
-##  Connect with Me
-
-Let’s build, learn, and grow together.  
-💼 [LinkedIn](https://www.linkedin.com/) | 💻 #WebDev #CSS #Frontend #CodeNewbie
-
----
-
-### 📁 Folder Structure
-
+/* General Sibling */
+h2 ~ p {
+  color: teal;
+}

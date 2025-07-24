@@ -2,64 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Day 4 - CSS Basics</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
-      padding: 2rem;
-    }
-
-    h1, h2 {
-      color: #007acc;
-    }
-
-    .highlight {
-      background-color: #e0f7fa;
-      padding: 0.5rem;
-      border-left: 4px solid #00acc1;
-      margin: 1rem 0;
-    }
-
-    .color-example {
-      color: #ff5733;
-    }
-
-    .text-styling {
-      font-weight: bold;
-      text-align: center;
-      text-decoration: underline;
-      letter-spacing: 2px;
-      line-height: 1.8;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Selectors & Combinators</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Day 4: Introduction to CSS</h1>
+  <h1 id="main-heading">Welcome to CSS Selectors</h1>
 
-  <p>CSS (Cascading Style Sheets) helps style and design HTML elements. It separates structure from design, allowing a clean and scalable codebase.</p>
+  <p class="highlight">This is a highlighted paragraph using class selector.</p>
 
-  <h2>Basic Syntax</h2>
-  <div class="highlight">
-    <code>selector { property: value; }</code>
+  <div>
+    <p>This paragraph is inside a div (descendant selector).</p>
+    <span>This span is inside the same div.</span>
   </div>
 
-  <h2>Color Example</h2>
-  <p class="color-example">This text is styled with a HEX color (#ff5733).</p>
-
-  <h2>Text Styling</h2>
-  <p class="text-styling">Centered, bold, underlined text with custom spacing!</p>
-
-  <h2>CSS Units</h2>
   <ul>
-    <li>Absolute units: px, cm</li>
-    <li>Relative units: %, em, rem</li>
+    <li>Direct child 1</li>
+    <li>Direct child 2</li>
   </ul>
 
-  <h2>Font Family</h2>
-  <p style="font-family: 'Courier New', Courier, monospace;">This text uses a monospace font.</p>
-</body>
-</html>
+  <h2>Heading 2</h2>
+  <p>This paragraph comes right after h2 (adjacent sibling).</p>
+  <p>This
