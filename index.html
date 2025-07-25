@@ -3,24 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Selectors & Combinators</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1 id="main-heading">Welcome to CSS Selectors</h1>
+  <title>Day 6 - CSS Box Model & Selectors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
 
-  <p class="highlight">This is a highlighted paragraph using class selector.</p>
+    h1 {
+      color: #2e86de;
+    }
 
-  <div>
-    <p>This paragraph is inside a div (descendant selector).</p>
-    <span>This span is inside the same div.</span>
-  </div>
+    .box {
+      width: 300px;
+      padding: 20px;
+      margin: 20px 0;
+      border: 5px solid #2e86de;
+      background-color: #eaf4ff;
+      box-sizing: border-box;
+    }
 
-  <ul>
-    <li>Direct child 1</li>
-    <li>Direct child 2</li>
-  </ul>
+    /* Attribute selector */
+    input[type="text"] {
+      padding: 10px;
+      border: 2px solid #888;
+      border-radius: 4px;
+    }
 
-  <h2>Heading 2</h2>
-  <p>This paragraph comes right after h2 (adjacent sibling).</p>
-  <p>This
+    /* Pseudo-class */
+    .box:hover {
