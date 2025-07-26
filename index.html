@@ -1,35 +1,74 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Day 6 - CSS Box Model & Selectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day 7 - Layout & Transitions</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
+      font-family: sans-serif;
+      margin: 2rem;
       background-color: #f9f9f9;
-    }
-
-    h1 {
-      color: #2e86de;
+      color: #333;
     }
 
     .box {
-      width: 300px;
+      background-color: #4c82f0;
+      color: white;
       padding: 20px;
-      margin: 20px 0;
-      border: 5px solid #2e86de;
-      background-color: #eaf4ff;
-      box-sizing: border-box;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
     }
 
-    /* Attribute selector */
-    input[type="text"] {
-      padding: 10px;
-      border: 2px solid #888;
-      border-radius: 4px;
-    }
-
-    /* Pseudo-class */
     .box:hover {
+      background-color: #355ec9;
+      transform: rotate(5deg);
+      opacity: 0.9;
+    }
+
+    .inline-example span {
+      display: inline-block;
+      background: #f0a500;
+      color: #000;
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+
+    .text-em {
+      font-size: 1.5em;
+    }
+
+    .text-rem {
+      font-size: 1.5rem;
+    }
+
+    .rgba-box {
+      background-color: rgba(255, 0, 0, 0.5);
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Day 7 - Layout & Transitions</h1>
+
+  <div class="box">
+    Hover over me! 🎯
+    <p>This box demonstrates padding, margin, transitions, and transforms.</p>
+  </div>
+
+  <div class="inline-example">
+    <span>Inline Block 1</span>
+    <span>Inline Block 2</span>
+    <span>Inline Block 3</span>
+  </div>
+
+  <p class="text-em">This text uses <code>em</code> units</p>
+  <p class="text-rem">This text uses <code>rem</code> units</p>
+
+  <div class="rgba-box">
+    This background uses <code>rgba()</code> with partial transparency.
+  </div>
+</body>
+</html>
