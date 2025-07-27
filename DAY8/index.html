@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day 8 - CSS Transforms & Effects</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+
+    .hero {
+      height: 200px;
+      background-image: url('https://via.placeholder.com/800x200');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      width: 300px;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05) translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .skew-banner {
+      background-color: #0077cc;
+      color: white;
+      padding: 1rem;
+      transform: skew(-10deg);
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      background-color: #ffa;
+      padding: 1rem;
+      transform: translate(20px, -10px);
+      margin-bottom: 2rem;
+    }
+
+    .smiley {
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      border-radius: 50%;
+      position: relative;
+      margin-top: 2rem;
+    }
+    .eye {
+      width: 15px;
+      height: 15px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 30px;
+    }
+    .left { left: 20px; }
+    .right { right: 20px; }
+    .mouth {
+      width: 50px;
+      height: 25px;
+      border-bottom: 5px solid black;
+      border-radius: 0 0 50px 50px;
+      position: absolute;
+      bottom: 20px;
+      left: 25px;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    Transform & Effects Showcase
+  </div>
+
+  <div class="card">
+    ✨ This is a card with hover effects using scale, translate, and box-shadow.
+  </div>
+
+  <div class="skew-banner">
+    ⚡ Skewed Banner adds dynamic edge to your layout!
+  </div>
+
+  <div class="box">
+    📦 This box is translated by 20px X and -10px Y.
+  </div>
+
+  <div class="smiley">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="mouth"></div>
+  </div>
+
+  <footer>
+    Day 8 - CSS Transforms, Shadows, Positioning & Pure CSS Art.
+  </footer>
+
+</body>
+</html>
