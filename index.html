@@ -1,74 +1,100 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Day 7 - Layout & Transitions</title>
+  <title>Day 9 - Flexbox & Grid Layout</title>
   <style>
     body {
       font-family: sans-serif;
-      margin: 2rem;
-      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      margin-top: 2rem;
       color: #333;
     }
 
-    .box {
-      background-color: #4c82f0;
+    /* === FLEXBOX DEMO === */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #e0f7fa;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .flex-item {
+      background-color: #00acc1;
       color: white;
-      padding: 20px;
-      margin-bottom: 20px;
+      padding: 1rem;
+      margin: 0.5rem;
+      flex: 1 1 150px;
+      text-align: center;
       border-radius: 8px;
-      transition: all 0.3s ease-in-out;
     }
 
-    .box:hover {
-      background-color: #355ec9;
-      transform: rotate(5deg);
-      opacity: 0.9;
+    /* === GRID DEMO === */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      background-color: #ede7f6;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 10px;
     }
 
-    .inline-example span {
-      display: inline-block;
-      background: #f0a500;
-      color: #000;
-      margin-right: 10px;
-      padding: 5px 10px;
+    .grid-item {
+      background-color: #7e57c2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px;
     }
 
-    .text-em {
-      font-size: 1.5em;
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
-    .text-rem {
-      font-size: 1.5rem;
-    }
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
 
-    .rgba-box {
-      background-color: rgba(255, 0, 0, 0.5);
-      padding: 10px;
-      margin-top: 20px;
+      .flex-container {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Day 7 - Layout & Transitions</h1>
 
-  <div class="box">
-    Hover over me! 🎯
-    <p>This box demonstrates padding, margin, transitions, and transforms.</p>
+  <h1>🎯 Day 9: Flexbox & Grid Layout</h1>
+
+  <h2>📦 Flexbox Example</h2>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
   </div>
 
-  <div class="inline-example">
-    <span>Inline Block 1</span>
-    <span>Inline Block 2</span>
-    <span>Inline Block 3</span>
+  <h2>🧩 Grid Example</h2>
+  <div class="grid-container">
+    <div class="grid-item">Grid 1</div>
+    <div class="grid-item">Grid 2</div>
+    <div class="grid-item">Grid 3</div>
+    <div class="grid-item">Grid 4</div>
+    <div class="grid-item">Grid 5</div>
+    <div class="grid-item">Grid 6</div>
   </div>
 
-  <p class="text-em">This text uses <code>em</code> units</p>
-  <p class="text-rem">This text uses <code>rem</code> units</p>
-
-  <div class="rgba-box">
-    This background uses <code>rgba()</code> with partial transparency.
-  </div>
 </body>
 </html>
