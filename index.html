@@ -3,98 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Day 9 - Flexbox & Grid Layout</title>
+  <title>Pet Adoption Page 🐾</title>
   <style>
-    body {
-      font-family: sans-serif;
+    * {
       margin: 0;
-      padding: 2rem;
-      background-color: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    h2 {
-      margin-top: 2rem;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
       color: #333;
+      padding: 1rem;
     }
 
-    /* === FLEXBOX DEMO === */
-    .flex-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      background-color: #e0f7fa;
-      padding: 1rem;
-      border-radius: 10px;
-    }
-
-    .flex-item {
-      background-color: #00acc1;
-      color: white;
-      padding: 1rem;
-      margin: 0.5rem;
-      flex: 1 1 150px;
+    header {
       text-align: center;
-      border-radius: 8px;
-    }
-
-    /* === GRID DEMO === */
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      background-color: #ede7f6;
-      padding: 1rem;
-      margin-top: 2rem;
-      border-radius: 10px;
-    }
-
-    .grid-item {
-      background-color: #7e57c2;
-      color: white;
+      background: #ffe8cc;
       padding: 1.5rem;
-      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 2rem 0;
+    }
+
+    .card {
+      background: #fff;
       border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      animation: slideIn 0.5s ease-in-out forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
     }
 
     @media (max-width: 768px) {
-      .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .grid-container {
+      .grid {
         grid-template-columns: 1fr;
-      }
-
-      .flex-container {
-        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
 
-  <h1>🎯 Day 9: Flexbox & Grid Layout</h1>
+  <header>
+    <h1>🐶 Adopt a Friend Today!</h1>
+  </header>
 
-  <h2>📦 Flexbox Example</h2>
-  <div class="flex-container">
-    <div class="flex-item">Item 1</div>
-    <div class="flex-item">Item 2</div>
-    <div class="flex-item">Item 3</div>
-    <div class="flex-item">Item 4</div>
-  </div>
-
-  <h2>🧩 Grid Example</h2>
-  <div class="grid-container">
-    <div class="grid-item">Grid 1</div>
-    <div class="grid-item">Grid 2</div>
-    <div class="grid-item">Grid 3</div>
-    <div class="grid-item">Grid 4</div>
-    <div class="grid-item">Grid 5</div>
-    <div class="grid-item">Grid 6</div>
-  </div>
+  <section class="grid">
+    <div class="card">
+      <img src="https://place-puppy.com/300x200" alt="Puppy 1">
+      <h2>Bella</h2>
+      <p>2-year-old Labrador looking for a forever home.</p>
+    </div>
+    <div class="card">
+      <img src="https://place-puppy.com/301x200" alt="Puppy 2">
+      <h2>Max</h2>
+      <p>Friendly and energetic. Great with kids!</p>
+    </div>
+    <div class="card">
+      <img src="https://place-puppy.com/302x200" alt="Puppy 3">
+      <h2>Luna</h2>
+      <p>Calm and cuddly. Perfect for apartment life.</p>
+    </div>
+  </section>
 
 </body>
 </html>

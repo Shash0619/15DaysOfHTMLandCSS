@@ -1,62 +1,48 @@
-# 🧑‍💻 Day 9 - Flexbox & Grid: Mastering Modern Layouts
+# 🐾 Pet Adoption Page - Day 10 of #15DaysOfHTMLandCSS
 
-Welcome to **Day 9** of my #15DaysOfHTMLandCSS Challenge!  
-Today I explored **Flexbox** and **CSS Grid** — the two powerhouse layout systems for modern web design.
+🎯 **Focus**: Responsive Design + CSS Animations + Real-World Project
 
----
-
-## 🔍 What I Learned
-
-### 📦 Flexbox (1D Layout)
-- `display: flex` — activates flexbox
-- `flex-direction` — controls direction (row, column)
-- `justify-content` — aligns items horizontally
-- `align-items`, `align-content` — vertical alignment
-- `flex-wrap` — handles wrapping of child elements
-- `flex` — shorthand for grow/shrink/basis
-
-Perfect for:
-- Navbars
-- Centering elements
-- Aligning cards and buttons
+This project is part of my self-paced **15 Days of HTML & CSS Challenge**. Day 10 was all about learning how to make websites **responsive**, **interactive**, and **visually engaging** — and what better way to practice than by building a **Pet Adoption Page**!
 
 ---
 
-### 🧩 CSS Grid (2D Layout)
-- `display: grid` — activates grid layout
-- `grid-template-columns/rows` — define structure
-- `gap`, `row-gap`, `column-gap` — spacing
-- `grid-column`, `grid-row` — span/position items
+## 💡 Key Concepts Practiced
 
-Ideal for:
-- Page layouts
-- Photo galleries
-- Dashboards
+### 🧭 Advanced CSS Grid:
+- `grid-template-areas`
+- `minmax()`, `auto-fit`, `repeat()`
+- `place-items`, `place-content`
 
----
+### 🎬 CSS Animations:
+- `@keyframes`, `animation`, `animation-fill-mode`
+- Used for pet card hover effects
 
-## 💻 Demo Includes
+### 📱 Media Queries:
+- Applied a **mobile-first** strategy
+- Made layout adapt from mobile to tablet to desktop
 
-- A **Flexbox section** with 4 responsive items
-- A **CSS Grid section** with a 3-column layout and responsive breakpoints
-- Mobile-responsive design with media queries
-
----
-
-## 💡 Realization
-
-> **Flexbox** is like a smart horizontal/vertical packer — fast and intuitive.  
-> **Grid** gives total blueprint control — great for entire sections and layouts.  
-Together, they solve 90%+ of layout challenges in web design.
+### 🧩 z-index:
+- Used for layered modal and header overlays
 
 ---
 
-## 📌 What's Next?
+## 🖼️ Live Preview
 
-**Day 10 → Responsive Design with Media Queries**  
-I’ll build mobile-first layouts and explore breakpoints for fluid design across devices.
+> Coming soon! (You can deploy this on GitHub Pages or Netlify)
 
 ---
 
-### Tags:
-#HTML #CSS #Flexbox #Grid #WebLayout #FrontendDev #UIUXDesign #CreativeCoding #15DaysOfCode #ResponsiveDesign #ModernCSS
+## 🛠️ Tech Stack
+- HTML5
+- CSS3 (Grid, Media Queries, Keyframe Animations)
+
+---
+
+## 🚀 How to Run
+1. Clone the repo
+2. Open `index.html` in your browser
+
+---
+
+## 🔮 Next Up (Day 11): Positioning in CSS
+- relative, absolute, fixed, sticky
