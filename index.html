@@ -2,110 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pet Adoption Page 🐾</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-      padding: 1rem;
-    }
-
-    header {
-      text-align: center;
-      background: #ffe8cc;
-      padding: 1.5rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      font-size: 2rem;
-    }
-
-    .grid {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      padding: 2rem 0;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s ease;
-      animation: slideIn 0.5s ease-in-out forwards;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    .card img {
-      max-width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .card h2 {
-      margin-top: 0.5rem;
-      font-size: 1.3rem;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    @keyframes slideIn {
-      0% { transform: translateY(30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Basics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
-  <header>
-    <h1>🐶 Adopt a Friend Today!</h1>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bootstrap Demo</a>
+    </div>
+  </nav>
 
-  <section class="grid">
-    <div class="card">
-      <img src="https://place-puppy.com/300x200" alt="Puppy 1">
-      <h2>Bella</h2>
-      <p>2-year-old Labrador looking for a forever home.</p>
-    </div>
-    <div class="card">
-      <img src="https://place-puppy.com/301x200" alt="Puppy 2">
-      <h2>Max</h2>
-      <p>Friendly and energetic. Great with kids!</p>
-    </div>
-    <div class="card">
-      <img src="https://place-puppy.com/302x200" alt="Puppy 3">
-      <h2>Luna</h2>
-      <p>Calm and cuddly. Perfect for apartment life.</p>
-    </div>
-  </section>
+  <!-- Container -->
+  <div class="container">
 
+    <!-- Buttons -->
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-danger">Danger</button>
+
+    <!-- Badges -->
+    <h2 class="mt-4">Badges</h2>
+    <span class="badge bg-success">New</span>
+    <span class="badge bg-warning text-dark">Warning</span>
+
+    <!-- Alerts -->
+    <h2 class="mt-4">Alerts</h2>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      This is an info alert — check it out!
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <!-- Button Group -->
+    <h2 class="mt-4">Button Group</h2>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-outline-secondary">Left</button>
+      <button type="button" class="btn btn-outline-secondary">Middle</button>
+      <button type="button" class="btn btn-outline-secondary">Right</button>
+    </div>
+
+    <!-- Cards -->
+    <h2 class="mt-4">Card</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">This is a Bootstrap card component with image, title, and text.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

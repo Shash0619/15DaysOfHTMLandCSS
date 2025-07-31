@@ -1,48 +1,39 @@
-# 🐾 Pet Adoption Page - Day 10 of #15DaysOfHTMLandCSS
+# 🧑‍💻 Day 12: Bootstrap Basics — Fast-Tracking Beautiful, Responsive UIs
 
-🎯 **Focus**: Responsive Design + CSS Animations + Real-World Project
+This project is part of my **#15DaysOfHTMLandCSS** challenge. On **Day 12**, I explored the power of **Bootstrap**, a powerful CSS framework for building modern, responsive UIs quickly and efficiently.
 
-This project is part of my self-paced **15 Days of HTML & CSS Challenge**. Day 10 was all about learning how to make websites **responsive**, **interactive**, and **visually engaging** — and what better way to practice than by building a **Pet Adoption Page**!
+## 🚀 What’s in This Demo
 
----
+This `index.html` file demonstrates:
 
-## 💡 Key Concepts Practiced
+- 🔹 Responsive Navbar
+- 🔹 Bootstrap Buttons (with variants)
+- 🔹 Badges
+- 🔹 Alerts (with dismiss)
+- 🔹 Button Group
+- 🔹 Bootstrap Card with image and text
 
-### 🧭 Advanced CSS Grid:
-- `grid-template-areas`
-- `minmax()`, `auto-fit`, `repeat()`
-- `place-items`, `place-content`
+## 📦 Technologies Used
 
-### 🎬 CSS Animations:
-- `@keyframes`, `animation`, `animation-fill-mode`
-- Used for pet card hover effects
-
-### 📱 Media Queries:
-- Applied a **mobile-first** strategy
-- Made layout adapt from mobile to tablet to desktop
-
-### 🧩 z-index:
-- Used for layered modal and header overlays
-
----
-
-## 🖼️ Live Preview
-
-> Coming soon! (You can deploy this on GitHub Pages or Netlify)
-
----
-
-## 🛠️ Tech Stack
 - HTML5
-- CSS3 (Grid, Media Queries, Keyframe Animations)
+- Bootstrap 5.3 (via CDN)
+
+## 🧠 Key Learning
+
+> Bootstrap isn’t cheating — it’s smart design engineering. It lets you build clean, responsive interfaces with consistent styling and reusable components.
+
+## 📸 Preview
+
+![Card Preview](https://via.placeholder.com/500x280?text=Card+Preview)
 
 ---
 
-## 🚀 How to Run
-1. Clone the repo
-2. Open `index.html` in your browser
+### 📅 Next Up: Day 13 → Forms, Inputs, Validation & Accessibility
+
+> Looking forward to crafting clean, accessible forms using Bootstrap's powerful form classes and validation features!
 
 ---
 
-## 🔮 Next Up (Day 11): Positioning in CSS
-- relative, absolute, fixed, sticky
+## 🔗 Useful Links
+
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
